@@ -1,0 +1,166 @@
+﻿@font-face{
+   font-family: "ProximaNova";
+   src: url("/_catalogs/masterpage/20_21/fonts/Proxima%20Nova%20Light.otf");   
+}
+
+/* Fix menu icon and send pointer */
+.css-1ueqw9g.webchat__icon-button{
+   cursor: pointer; 
+}
+
+.css-14x775w, [data-css-14x775w] {
+    width: 60px;
+    right: 15px;
+}
+/* Open and close bot style */
+.inteBot {         
+   visibility: hidden;
+   /* transition: 0.4s ease-out; */   
+   position: fixed;    
+   border-radius: 10px 10px 0 0;
+   bottom: 80px;
+   right: 17px;
+   cursor: pointer;
+   height: 400px;
+   z-index: -1;
+   width: 430px; 
+   font-family: "ProximaNova";   
+   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+   0 2px 2px rgba(0,0,0,0.12), 
+   0 4px 4px rgba(0,0,0,0.12), 
+   0 8px 8px rgba(0,0,0,0.12), 
+   0 16px 16px rgba(0,0,0,0.12);
+   /* bottom: 10px; */
+ }
+.headerInteBot {         
+   visibility: hidden;   
+   /* visibility: visible;         */
+   position: fixed;
+   bottom: 480px;
+   right: 17px;
+   border-radius: 10px 10px 0 0;
+   cursor: pointer;
+   height: 70px;
+   z-index: 9010;
+   width: 430px;
+   background-color: rgb(140, 82, 227);   
+ }
+.buttonCloseChat{
+   visibility: hidden;   
+   bottom: 80px;
+}
+.inteBot.open { 
+   /* transition: 0.4s ease-out; */
+   visibility: visible;    
+   /* position: fixed;    
+   border-radius: 10px 10px 0 0;
+   bottom: 80px;
+   right: 10px;
+   cursor: pointer;
+   height: 400px;
+   z-index: 9000;
+   width: 385px; 
+   font-family: "ProximaNova";   
+   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+   0 2px 2px rgba(0,0,0,0.12), 
+   0 4px 4px rgba(0,0,0,0.12), 
+   0 8px 8px rgba(0,0,0,0.12), 
+   0 16px 16px rgba(0,0,0,0.12); */
+   z-index: 9000;
+ }
+.headerInteBot.open {  
+   /* transition: 0.4s ease-out; */
+   visibility: visible;        
+   /* position: fixed;
+   bottom: 480px;
+   right: 10px;
+   border-radius: 10px 10px 0 0;
+   cursor: pointer;
+   height: 70px;
+   z-index: 9010;
+   width: 385px;
+   background-color: rgb(242, 114, 33);     */
+ }
+ /* Button bubble style */
+.buttonBubble {
+   position: fixed;
+   border: transparent;
+   /* border-radius: 50%; */
+   bottom: 10px;
+   right: 25px;   
+   height: 80px;
+   width: 80px;
+   z-index: 9000;
+   cursor: pointer;
+   background-color: transparent;
+   /* background-image: url('./icons/Chat ok_Mesa de trabajo 1 copia 2.png'); */
+   background-image: url('./Bolazul.png');
+   /* box-shadow: 0 2px 10px 1px #787fce; */
+ } 
+.buttonBubble.open {
+   position: fixed;
+   /* transition: 0.4s ease-out; */
+   /*transform: rotate(150deg);*/ 
+ } 
+/* State bot style */
+.moveBotIcon{visibility: hidden;}
+.buttonCloseChat{visibility: hidden;}
+.botTopName{visibility: hidden;}
+.botStatus{visibility: hidden;}
+.botStatus:before{visibility: hidden;}
+
+.headerInteBot.open .moveBotIcon{
+   visibility: visible;
+   position: relative;
+   left: 20px;
+   top: 2px;
+}
+.headerInteBot.open .botTopName{
+   visibility: visible;
+   position: relative;
+   left: 100px;
+   bottom: 5px;
+   font-weight: bold;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   text-size-adjust: 12;
+}
+.headerInteBot.open .botStatus{
+   visibility: visible;
+   position: relative;
+   left: 100px;
+   bottom: 10px;      
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   /* TamaÃƒÂ±o de letra serÃƒÂ¡: 14 */
+/* TipografÃƒÂ­a: prÃƒÂ³xima nova thin */
+   /* font-family: ; */
+
+   text-size-adjust: 12;
+}
+.headerInteBot.open .botStatus:before{
+   visibility: visible;
+   content: "";
+   position: relative;
+   display: inline-flex;
+   top: 1px;
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+   background: rgb(0, 255, 0);
+}
+/* Button close chat style */
+.headerInteBot.open .buttonCloseChat.open{
+   /* transition: 0.4s ease-out; */
+   visibility: visible;   
+   position: fixed;
+
+   bottom: 520px;
+   right: 40px;   
+
+   height: 17px;
+   width: 17px;
+   z-index: 9000;
+   cursor: pointer;   
+   background-image: url('/_catalogs/masterpage/20_21/img/CloseChat.png');
+}   

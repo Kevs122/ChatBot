@@ -1,0 +1,154 @@
+(async function () {   
+    // ============== POST petition to BOT  
+    // You should never put the Direct Line secret in the browser or client app  
+  
+    // ====== direct line production
+    // const secret = 'KiwXQnTY-AQ.P0qGfw7sjhpBK2KbSYakLymmoOce5xweyMrGqQez-c4';
+  
+    // ====== direct line test
+    //const secret = 'MIwX1YCwL48.TjPRy68RAr_bAVufxCWR2Xl6cFEL4orc_MUgkx1GSNE';
+    const secret = 'B5aoOVJO0fo.NoyYsHGLO4o9ne4URZv2rJGuRwlQA7yXNMBTFXNhn-4';
+  
+    const res = await fetch('https://directline.botframework.com/v3/directline/tokens/generate', { 
+      headers: {
+        Authorization: `Bearer ${secret}`,
+      },
+      method: 'POST'
+    });
+    const { token } = await res.json(); 
+  
+    // ============== Store for send messages to bot and Welcome message  
+    var store = window.WebChat.createStore(
+      {},
+      ({ dispatch }) => next => action => {
+  
+        // if (action.type === 'DIRECT_LINE/CONNECT_FULFILLED') {
+        //   dispatch({ type: 'WEB_CHAT/SEND_EVENT', payload: {name: 'webchat/join'} });          
+        // } 
+  
+        if ( action.type === 'DIRECT_LINE/INCOMING_ACTIVITY' ) {
+          const event = new Event('incomingActivity');      
+          event.data = action.payload.activity;
+          window.dispatchEvent(event);
+        } 
+  
+        return next(action);
+      }
+    );
+  
+    const menuBtn = document.querySelector('.buttonBubble');
+    var flagSendMenu = true;
+    menuBtn.addEventListener('click', () => {    
+        if( flagSendMenu){        
+          store.dispatch({ type: 'WEB_CHAT/SEND_EVENT', payload: {name: 'webchat/join'} }); 
+          flagSendMenu = false         
+        } 
+    })
+  
+    // ============== Events handler from directline
+    window.addEventListener('incomingActivity', ({ data }) => { 
+      let type = data.type;  
+      
+      // ============== Delete or disable AdaptiveCards buttons after submit it       
+      // if(data.value!=undefined && data.value.id=="hideButton"){                         
+      //   Array.from(document.getElementsByClassName("ac-pushButton")).forEach(element => {                              
+          
+      //     // ===== Disable
+      //     element.disabled= 'none';
+      //     element.style.backgroundColor = "lightgrey";
+          
+      //     // ===== Delete
+      //     // element.style.display='none'
+      //   }); 
+      // }
+      // ============== Event to delete messages     
+      if (type === 'event') {          
+        if( data.channelData.data === 'disableButtons'){ 
+  
+          Array.from(document.getElementsByClassName("ac-pushButton")).forEach(element => {                              
+          
+            // ===== Disable
+            element.disabled= 'none';
+            element.style.backgroundColor = "lightgrey";
+            
+            // ===== Delete
+            // element.style.display='none'
+          }); 
+        }          
+      }
+      
+      // ============== Event to delete messages     
+      if (type === 'event') {          
+          if( data.channelData.data === 'deleteMessages'){ 
+  
+            // =============== Delete determinated number of messages          
+            my_array = Array.from(document.getElementsByClassName("css-604azu css-10xzw44 webchat__stacked_indented_content"));        
+            for( let j=0; j<data.channelData.nDel; j++ ){
+              if( j < my_array.length){
+                let last_element = my_array[my_array.length - 1 - j];
+                last_element.remove(); 
+              }            
+            };
+          }          
+      }
+    });
+    
+    // ============== Font set function
+    function fontFamily(fonts) {
+      return fonts.map(font => `'${font}'`).join(', ');
+    }
+    
+    // ============== Bot style options
+    const styleOptions = {                                  
+            primaryFont: fontFamily(['ProximaNova', 'sans-serif']),                                           
+            botAvatarImage: '/_catalogs/masterpage/20_21/img/Chat ok_Mesa de trabajo 1 copia 4.png',
+            userAvatarImage: '/_catalogs/masterpage/20_21/img/Chat ok_Mesa de trabajo 1 copia.png',            
+            botAvatarBackgroundColor: 'white',             
+            hideSendBox: false,
+            hideUploadButton: false,                            
+            sendBoxTextWrap: true            
+            // bubbleBackground: 'azure'                                                   
+    };
+    
+    // ============== WebChat Render
+    window.WebChat.renderWebChat({
+      directLine: window.WebChat.createDirectLine({ token }),
+      store, styleOptions
+    }, document.getElementById('inteBot'));
+  
+    document.querySelector('#inteBot > *').focus();  
+  
+    // ======== Replace SendBox placeHolder
+    const sendBox = document.getElementsByClassName( 'webchat__send-box-text-box__text-area' );  
+    sendBox[0].placeholder = 'Escribe tu pregunta';
+  
+    var att = document.createAttribute("class");      
+    att.value = "css-1ueqw9g webchat__icon-button";   
+    newDiv.setAttributeNode(att); 
+  
+    att = document.createAttribute("title");      
+    att.value = "Menu";   
+    newDiv.setAttributeNode(att); 
+  
+    att = document.createAttribute("type");      
+    att.value = "button";   
+    newDiv.setAttributeNode(att); 
+  
+    // ======== Add image to button
+    var newImg = document.createElement("img");
+  
+    var inImg = document.createAttribute("src");
+    inImg.value = "/_catalogs/masterpage/20_21/img/Sandwich_menu.jpg";
+    newImg.setAttributeNode(inImg);
+  
+    newDiv.appendChild(newImg);
+    newDiv.onclick = () => {       
+      // ========== Send a message without show in chat    
+      store.dispatch({ type: 'WEB_CHAT/SEND_MESSAGE', payload: { text: 'menu' } });   
+    }
+      
+    //======== Button replace
+    var button = document.getElementsByClassName("css-1ueqw9g webchat__icon-button")[0];
+    button.replaceWith(newDiv);  
+  
+  })().catch(err => console.error(err));

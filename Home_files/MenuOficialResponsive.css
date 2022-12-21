@@ -1,0 +1,345 @@
+﻿
+@media (min-width: 1281px) {
+
+
+    /*Transparencia*/
+    .FondoTransparencia{width: 55%;background: #001e96;height: 141px;border-radius: 100px;margin-top: 2%;position: absolute;left:40%;}
+    .LupaTransparencia{position: absolute;left: 80%;top:-2%;}
+    .LupaTransparenciaFondo{top:0%;width: 565px;height: 141px; position:absolute;left:-65%}
+    
+    #BarraNavegacionTransparencia{position: absolute; left: 10%;top:4%;width: 75%;z-index:100;height: 130px;}
+    #BarraNavegacionTransparencia .navbar{background-color: transparent !important;  box-shadow: none !important;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a {color:#ffffff;font-size:14px;font-weight: bold;padding: 4px;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a:hover {color:#0082FF;}
+    #BarraNavegacionTransparencia .navbar-brand{display: none;}
+    
+    #ColeccionTransparencia{display: inline-block; height: 110px;width: 100%;}      
+    #ColeccionTransparencia li a{float: left;list-style: outside none none;width: 40%;color: white; margin-top: -2px;}
+    #ColeccionTransparencia li a:hover{float: left;list-style: outside none none;width: 40%;color: white; font-weight: bold;}
+    /*//Transparencia*/
+    
+    /*Footer*/
+    /* Las siguientes clases realizan los iconos de redes sociales el fontcircle sera el circulo en la parte de trasera de los iconos*/
+    .footer{top:50%; width: 100%;}
+    .fontcircle{border-radius: 40px;background-color: #001F8A;display: inline-block;margin-right: 5px;padding: 10px;}
+    .fontCustom{font-size: 20px;margin-right: 10px;color: white;}
+    .boldf{font-weight: bold;font-size: 14px;color: #555;}
+    #PiePagina{height:auto;background-color: #DADADA;}
+    #PuentecillasPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555; margin-top:7%;}
+    #ProfesionesPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top:7%;}
+    #PozuelosPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top:1%;}   
+    #NMIgualdad{width: 25%; height:auto;margin-bottom: 3%;margin-top:3%; }      
+    /*/Footer*/ 
+    footer{margin-top:2% !important;}
+    
+      }
+      
+      /* 
+        ##Device = Laptops, Desktops
+        ##Screen = B/w 1025px to 1280px
+      */
+      
+      @media (min-width: 1025px) and (max-width: 1280px) {
+       /*Generales*/
+    #BarradeNavegacionPrincipal .navbar {
+        height: 92px;
+        background-color: #0082FF !important;
+        font-family: 'Proxima-Nova-Reg';
+      }
+      
+    #BarradeNavegacionPrincipal  .navbar-brand {
+        padding: 0 15px;
+        height: 92px;
+        line-height: 80px;
+      }
+      
+    #BarradeNavegacionPrincipal  .navbar-toggle {
+        /* (80px - button height 34px) / 2 = 23px */
+        margin-top: 23px;
+        padding: 9px 10px !important;
+    
+      }
+    
+      #BarradeNavegacionPrincipal  .navbar-toggle-icon {
+     color:white;
+      }
+    
+     #BarradeNavegacionPrincipal .navbar-nav > li > a {
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+        padding-top: 26.5px;
+        padding-bottom: 26.5px;
+        line-height: 27px;
+        color: white;
+        font-size:12px;
+    
+      }
+    
+      #BarradeNavegacionPrincipal .navbar-nav > li > a:hover {
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+        padding-top: 27px;
+        padding-bottom: 26.5px;
+        line-height: 27px;
+        color: white;
+        font-size:14px;
+      }
+    
+      #BarradeNavegacionPrincipal #navbarTogglerDemo02{
+          padding-right: 2%;
+      }
+    
+      #logotipoSEGoficial{height: 92px; top:0;padding: 0; position: absolute;}
+    
+      #CintaPrincipal{height: 80px;background-color:#E4ECFA; color:#000F9F; font-size:12px; height: auto; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+      #CintaPrincipal a{text-decoration: none;color: #000F9F;padding-left: 2%;}
+      #CintaPrincipal i{ font-size:18px;}
+      #CintaPrincipal i:hover{ font-size:24px;}
+    /*/Generales*/
+    
+    
+    /*Transparencia*/
+    .FondoTransparencia{width: 55%;background: #001e96;height: 141px;border-radius: 100px;margin-top: 2%;position: absolute;left:40%;}
+    .LupaTransparencia{position: absolute;left: 80%;top:-2%;}
+    .LupaTransparenciaFondo{top:0%;width: 565px;height: 141px; position:absolute;left:-65%}
+    
+    #BarraNavegacionTransparencia{position: absolute; left: 20%;top:4%;width: 85%;z-index:100;height: 130px;}
+    #BarraNavegacionTransparencia .navbar{background-color: transparent !important;  box-shadow: none !important;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a {color:#ffffff;font-size:12px;font-weight: bold;padding: 2px;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a:hover {color:#0082FF;}
+    #BarraNavegacionTransparencia .navbar-brand{display: none;}
+    
+    #ColeccionTransparencia{display: inline-block; height: 110px;width: 80%;}      
+    #ColeccionTransparencia li a{float: left;list-style: outside none none;width: 40%;color: white; margin-top: -2px;}
+    #ColeccionTransparencia li a:hover{float: left;list-style: outside none none;width: 40%;color: white; font-weight: bold;}
+    /*//Transparencia*/
+    
+    /*Footer*/
+    /* Las siguientes clases realizan los iconos de redes sociales el fontcircle sera el circulo en la parte de trasera de los iconos*/
+    .footer{top:50%; width: 100%;}
+    .fontcircle{border-radius: 40px;background-color: #001F8A;display: inline-block;margin-right: 5px;padding: 10px;}
+    .fontCustom{font-size: 20px;margin-right: 10px;color: white;}
+    .boldf{font-weight: bold;font-size: 14px;color: #555;}
+    #PiePagina{height:auto;background-color: #DADADA;}
+    #PuentecillasPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;}
+    #ProfesionesPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;}
+    #PozuelosPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top:1%;}   
+    #NMIgualdad{width: 25%; height:auto;margin-bottom: 3%;margin-top:3%; }      
+    /*/Footer*/ 
+    footer{margin-top:20% !important;}
+    
+        
+      }
+      
+      /* 
+        ##Device = Tablets, Ipads (portrait)
+        ##Screen = B/w 768px to 1024px
+      */
+      
+      @media (min-width: 768px) and (max-width: 1024px) {
+        /*Generales*/
+      #BarradeNavegacionPrincipal  .navbar-toggler-icon {color:white;}
+      #BarradeNavegacionPrincipal .nav-item{border:#000F9F;border-style: solid;border-width: 1px;    text-align: center;vertical-align: middle;}
+      #BarradeNavegacionPrincipal .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 8px;}
+      #BarradeNavegacionPrincipal .navbar-nav > li > a:hover {color:#0082FF;font-size:14px;padding: 10px;}  
+      #logotipoSEGoficial{height: 92px; top:0;padding: 0; position: absolute;}
+      #CintaPrincipal{height: 80px;background-color:#E4ECFA; color:#000F9F; font-size:12px; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+      #CintaPrincipal a{text-decoration: none;color: #000F9F;padding-left: 2%;}
+      #CintaPrincipal i{ font-size:18px;}
+      #CintaPrincipal i:hover{ font-size:24px;}
+      #MenuMovil{background-color: white;position: absolute;width: 100%;top: 100%;left:0;right: 0;z-index:1000;}
+      .navbar-toggler i{color: white; font-size: 30px;}
+    /*/Generales*/
+        
+    /*Transparencia*/
+    .FondoTransparencia{width: 95%;background: #001e96;height: 141px;border-radius: 100px;margin-top: 2%;position: absolute;}
+    .LupaTransparencia{position: absolute;left: 71%;top:-2%;}
+    #BarraNavegacionTransparencia{position: absolute; left: 10%;top:55%;width: 60%;z-index:100;}
+    #BarraNavegacionTransparencia .navbar{border-top-left-radius: 20px;border-bottom-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background-color: #ffffff !important;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 12px;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a:hover {color:#0082FF;font-size:14px;padding: 10px;}
+    #BarraNavegacionTransparencia .navbar-brand{color:#000F9F;font-size:16px;font-weight: bold;padding: 8px;}
+    .LupaTransparenciaFondo{display:none;}
+    
+    /*//Transparencia*/
+    
+    /*Footer*/
+    /* Las siguientes clases realizan los iconos de redes sociales el fontcircle sera el circulo en la parte de trasera de los iconos*/
+    .footer{top:50%; width: 100%;}
+    .fontcircle{border-radius: 40px;background-color: #001F8A;display: inline-block;margin-right: 5px;padding: 10px;}
+    .fontCustom{font-size: 20px;margin-right: 10px;color: white;}
+    .boldf{font-weight: bold;font-size: 14px;color: #555;}
+    #PiePagina{height:auto;background-color: #DADADA;}
+    #PuentecillasPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top:-10%;}
+    #ProfesionesPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top: -5%;}
+    #PozuelosPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;}   
+    #NMIgualdad{width: 25%; height:auto;margin-bottom: 3%;margin-top:3%; }      
+    /*/Footer*/   
+    footer{margin-top:25% !important;}
+      }
+      
+      /* 
+        ##Device = Tablets, Ipads (landscape)
+        ##Screen = B/w 768px to 1024px
+      */
+      
+      @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            /*Generales*/
+      #BarradeNavegacionPrincipal  .navbar-toggler-icon {color:white;}
+      #BarradeNavegacionPrincipal .nav-item{border:#000F9F;border-style: solid;border-width: 1px;    text-align: center;vertical-align: middle;}
+      #BarradeNavegacionPrincipal .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 8px;}
+      #BarradeNavegacionPrincipal .navbar-nav > li > a:hover {color:#0082FF;font-size:14px;padding: 10px;}  
+      #logotipoSEGoficial{height: 92px; top:0;padding: 0; position: absolute;}
+      #CintaPrincipal{height: 80px;background-color:#E4ECFA; color:#000F9F; font-size:12px; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+      #CintaPrincipal a{text-decoration: none;color: #000F9F;padding-left: 2%;}
+      #CintaPrincipal i{ font-size:18px;}
+      #CintaPrincipal i:hover{ font-size:24px;}
+      #MenuMovil{background-color: white;position: absolute;width: 100%;top: 100%;left:0;right: 0; z-index:1000;}
+      .navbar-toggler i{color: white; font-size: 30px;}
+    /*/Generales*/
+        
+    /*Transparencia*/
+    .FondoTransparencia{width: 95%;background: #001e96;height: 141px;border-radius: 100px;margin-top: 2%;position: absolute;}
+    .LupaTransparencia{position: absolute;left: 85%;top:-2%;}
+    #BarraNavegacionTransparencia{position: absolute; left: 8%;top:55%;width: 75%;z-index:100;}
+    #BarraNavegacionTransparencia .navbar{border-top-left-radius: 20px;border-bottom-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background-color: #ffffff !important;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 12px;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a:hover {color:#0082FF;font-size:14px;padding: 10px;}
+    #BarraNavegacionTransparencia .navbar-brand{color:#000F9F;font-size:16px;font-weight: bold;padding: 8px;}
+    .LupaTransparenciaFondo{display:none;}
+    
+    /*//Transparencia*/
+    
+    /*Footer*/
+    /* Las siguientes clases realizan los iconos de redes sociales el fontcircle sera el circulo en la parte de trasera de los iconos*/
+    .footer{top:50%; width: 100%;}
+    .fontcircle{border-radius: 40px;background-color: #001F8A;display: inline-block;margin-right: 5px;padding: 10px;}
+    .fontCustom{font-size: 20px;margin-right: 10px;color: white;}
+    .boldf{font-weight: bold;font-size: 14px;color: #555;}
+    #PiePagina{height:auto;background-color: #DADADA;}
+    #PuentecillasPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top:-10%;}
+    #ProfesionesPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top: -5%;}
+    #PozuelosPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;}   
+    #NMIgualdad{width: 25%; height:auto;margin-bottom: 3%;margin-top:3%; }      
+    /*/Footer*/   
+    footer{margin-top:25% !important;}
+        
+        
+    /*MENU DE DESTACADOS CON LAS 6 OPCIONES*/
+    #lgdestacado{height: 55px;font-family:'Baloo'}      
+    #ListaDestacado .list-group{height:390px;width:100%; margin-top:2%;margin-bottom: -10%;}
+    #ListaDestacado .list-group-item{height: 50px;width: 100%;}
+    #ListaDestacado ul li a{font-family:'Proxima-Nova-Reg';font-size:14px !important; }
+    #ListaDestacado ul li a:hover{font-family:'Proxima-Nova-Reg';font-size:16px ;font-weight: bold !important;}
+    
+      }
+      
+      /* 
+        ##Device = Low Resolution Tablets, Mobiles (Landscape)
+        ##Screen = B/w 481px to 767px
+      */
+      
+      @media (min-width: 481px) and (max-width: 767px) {
+        /*Generales*/
+      #BarradeNavegacionPrincipal  .navbar-toggler-icon {color:white;}
+      #BarradeNavegacionPrincipal .nav-item{border:#000F9F;border-style: solid;border-width: 1px;    text-align: center;vertical-align: middle;}
+      #BarradeNavegacionPrincipal .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 8px;}
+      #BarradeNavegacionPrincipal .navbar-nav > li > a:hover {color:#ffffff;font-size:14px;padding: 10px;color:#FFFFFF;font-size:14px;padding: 10px;background-color: #001F8A;}  
+      #logotipoSEGoficial{height: 92px; top:0;padding: 0; position: absolute;}
+      #CintaPrincipal{background-color:#E4ECFA; color:white; font-size:12px; height: auto; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+      #CintaPrincipal a{text-decoration: none;color: white;padding-left: 2%;}
+      #CintaPrincipal i{ font-size:18px;}
+      #CintaPrincipal i:hover{ font-size:24px;}
+      #MenuMovil{background-color: white;position: absolute;width: 100%;top: 100%;left:0;right: 0;z-index:1000;}
+      .navbar-toggler i{color: white; font-size: 30px;}
+    /*/Generales*/
+    
+       
+    /*Transparencia*/
+    .FondoTransparencia{width: 95%;background: #001e96;height: 141px;border-radius: 100px;margin-top: 2%;position: absolute;}
+    .LupaTransparencia{position: absolute;left: 71%;top:-2%;}
+    #BarraNavegacionTransparencia{position: absolute; left: 10%;top:55%;width: 60%;z-index:100;}
+    #BarraNavegacionTransparencia .navbar{border-top-left-radius: 20px;border-bottom-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background-color: #ffffff !important;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 12px;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a:hover {color:#FFFFFF;font-size:14px;padding: 10px;background-color: #001F8A;}
+    #BarraNavegacionTransparencia .navbar-brand{color:#000F9F;font-size:16px;font-weight: bold;padding: 8px;}
+    .LupaTransparenciaFondo{display:none;}
+    
+    /*//Transparencia*/
+    
+    /*Footer*/
+    /* Las siguientes clases realizan los iconos de redes sociales el fontcircle sera el circulo en la parte de trasera de los iconos*/
+    .footer{top:50%; width: 100%;}
+    .fontcircle{border-radius: 40px;background-color: #001F8A;display: inline-block;margin-right: 5px;padding: 10px;}
+    .fontCustom{font-size: 20px;margin-right: 10px;color: white;}
+    .boldf{font-weight: bold;font-size: 14px;color: #555;}
+    #PiePagina{height:auto;background-color: #DADADA;}
+    #PuentecillasPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top:-10%;}
+    #ProfesionesPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top: -5%;}
+    #PozuelosPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;}   
+    #NMIgualdad{width: 25%; height:auto;margin-bottom: 3%;margin-top:3%; }      
+    /*/Footer*/   
+    footer{margin-top:35% !important;}
+    
+    /*MENU DE DESTACADOS CON LAS 6 OPCIONES*/
+    #lgdestacado{height: 55px;font-family:'Baloo'}      
+    #ListaDestacado .list-group{height:390px;width:100%; margin-top:2%;margin-bottom: -10%;}
+    #ListaDestacado .list-group-item{height: 50px;width: 100%;}
+    #ListaDestacado ul li a{font-family:'Proxima-Nova-Reg';font-size:14px !important; }
+    #ListaDestacado ul li a:hover{font-family:'Proxima-Nova-Reg';font-size:16px ;font-weight: bold !important;}
+    
+    }
+      
+      /* 
+        ##Device = Most of the Smartphones Mobiles (Portrait)
+        ##Screen = B/w 320px to 479px
+      */
+      
+      @media (min-width: 320px) and (max-width: 480px) {
+        
+            /*Generales*/
+      #BarradeNavegacionPrincipal  .navbar-toggler-icon {color:white;}
+      #BarradeNavegacionPrincipal .nav-item{border:#000F9F;border-style: solid;border-width: 1px;    text-align: center;vertical-align: middle;}
+      #BarradeNavegacionPrincipal .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 8px;}
+      #BarradeNavegacionPrincipal .navbar-nav > li > a:hover {color:#FFFFFF;font-size:14px;padding: 10px;background-color: #001F8A;}  
+      #logotipoSEGoficial{height: 92px; top:0;padding: 0; position: absolute;}
+      #CintaPrincipal{background-color:#E4ECFA; color:white; font-size:12px; height: auto; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+      #CintaPrincipal a{text-decoration: none;color: white;padding-left: 2%;}
+      #CintaPrincipal i{ font-size:18px;}
+      #CintaPrincipal i:hover{ font-size:24px;}
+      #MenuMovil{background-color: white;position: absolute;width: 100%;top: 100%;left:0;right: 0;z-index:1000;}
+      .navbar-toggler i{color: white; font-size: 30px;}
+    /*/Generales*/
+    
+       
+    
+    /*Transparencia*/
+    .FondoTransparencia{width: 95%;background: #001e96;height: 141px;border-radius: 100px;margin-top: 2%;position: absolute;}
+    .LupaTransparencia{position: absolute;left: 71%;top:-2%;}
+    #BarraNavegacionTransparencia{position: absolute; left: 10%;top:55%;width: 60%;z-index:100;}
+    #BarraNavegacionTransparencia .navbar{border-top-left-radius: 20px;border-bottom-left-radius: 20px;border-top-right-radius: 20px;border-bottom-right-radius: 20px; background-color: #ffffff !important;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 12px;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a:hover {color:#0082FF;font-size:14px;padding: 10px;}
+    #BarraNavegacionTransparencia .navbar-brand{color:#000F9F;font-size:16px;font-weight: bold;padding: 8px;}
+    .LupaTransparenciaFondo{display:none;}
+    /*//Transparencia*/
+    
+    /*Footer*/
+    /* Las siguientes clases realizan los iconos de redes sociales el fontcircle sera el circulo en la parte de trasera de los iconos*/
+    .footer{top:50%; width: 100%;}
+    .fontcircle{border-radius: 40px;background-color: #001F8A;display: inline-block;margin-right: 5px;padding: 10px;}
+    .fontCustom{font-size: 20px;margin-right: 10px;color: white;}
+    .boldf{font-weight: bold;font-size: 14px;color: #555;}
+    #PiePagina{height:auto;background-color: #DADADA;}
+    #PuentecillasPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top:-10%;}
+    #ProfesionesPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;margin-top: -5%;}
+    #PozuelosPP{margin-bottom: 0; font-size: 12px; font-weight: 400; color:#555;}   
+    #NMIgualdad{width: 25%; height:auto;margin-bottom: 3%;margin-top:3%; }      
+    /*/Footer*/   
+    
+     /*MENU DE DESTACADOS CON LAS 6 OPCIONES*/
+    #lgdestacado{height: 55px;font-family:'Baloo'}      
+    #ListaDestacado .list-group{height:390px;width:100%; margin-top:2%;margin-bottom: -10%;}
+    #ListaDestacado .list-group-item{height: 50px;width: 100%;}
+    #ListaDestacado ul li a{font-family:'Proxima-Nova-Reg';font-size:14px !important; }
+    #ListaDestacado ul li a:hover{font-family:'Proxima-Nova-Reg';font-size:16px ;font-weight: bold !important;}
+       
+      }

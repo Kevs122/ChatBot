@@ -1,0 +1,272 @@
+﻿/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@font-face {
+    font-family: 'Baloo';
+    src:url('../fonts/Baloo-Regular.ttf')  format('truetype'),
+        url('../fonts/Baloo-Regular.woff') format('woff'),
+        url('../fonts/Baloo-Regular.otf') format('opentype');
+  }
+  
+ @font-face {
+    font-family: 'Proxima-Nova-Reg';
+    src: 
+        url('../fonts/Proxima-Nova-Reg.woff') format('woff'),
+         url('../fonts/Proxima-Nova-Reg.ttf') format('truetype'),
+       url('../fonts/Proxima-Nova-Reg.otf') format('opentype');
+  }
+  
+  #s4-bodyContainer {padding-bottom:0;}​​
+
+body{max-width: 1600px;}
+
+/*Utilizar la siguiente clase si se desea agregar un contenedor el maximo es de 1600px de acuerdo a los lineamientos*/
+.container{max-width: 1600px;}
+
+#IconoRectangulo{ }
+
+  /*Generales*/
+#BarradeNavegacionPrincipal .navbar {height: 92px; background-color: white !important;font-family: 'Proxima-Nova-Reg'; font-size: 12px; font-weight: bold;}
+  
+#BarradeNavegacionPrincipal  .navbar-brand {padding: 0 15px;height: 92px;line-height: 80px;}
+  
+#BarradeNavegacionPrincipal  .navbar-toggle { /* (80px - button height 34px) / 2 = 23px */ margin-top: 23px; padding: 9px 10px !important;}
+
+#BarradeNavegacionPrincipal  .navbar-toggle-icon {color:white;  }
+
+ #BarradeNavegacionPrincipal .navbar-nav > li > a {  /* (80px - line-height of 27px) / 2 = 26.5px */  padding-top: 26.5px;  padding-bottom: 26.5px;line-height: 27px;color: #000F9F; }
+
+  #BarradeNavegacionPrincipal .navbar-nav > li > a:hover {/* (80px - line-height of 27px) / 2 = 26.5px */padding-top: 27px;padding-bottom: 26.5px;line-height: 27px;color: #FF8200;font-size:14px;}
+
+  #BarradeNavegacionPrincipal #navbarTogglerDemo02{padding-right: 2%;}
+
+  #logotipoSEGoficial{height: 92px; width: 316px;top:0;padding: 0; position: absolute;}
+  
+  /*Cinta Principal que contiene Llamanos, escribenos,directorio,transparencia e iconos de redes sociales*/
+  #CintaPrincipal{display:flex; align-items: center;height: 80px;background-color:#E4ECFA; color:#000F9F; font-size:18px; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+  #CintaPrincipal a{font-size:12px;text-decoration: none;color: #000F9F;padding-left: 2%;}
+  #CintaPrincipal i{font-size:18px;}
+  #CintaPrincipal i:hover{font-weight: bold; color:#FF8200;}
+  #CintaPrincipal a:hover{font-weight: bold; color:#FF8200;}
+
+  /*Iconos de redes sociales de SEG en la cinta principal*/
+  #IconosRedesSociales a i{font-size:24px;color:#0066FF !important;}
+  #IconosRedesSociales i:hover{color:#FF8200 !important;}
+  #IconosRedesSociales #TextoIdioma{font-size:12px !important;color:#0066FF !important;}
+  #IconosRedesSociales #TextoIdioma:hover{font-size:12px !important;color:#FF8200 !important;}
+  #IconosRedesSociales a img{height:auto; width: 10% !important; margin-top: -3%;}
+
+/*/Generales*/
+
+/*SLIDER O IMAGEN DENTRO DEL CAROUSEL CON LAS MEDIDAS DE 790X390*/      
+.carousel-item img{width: 1195 !important;height: auto;}
+
+/*BANNER EN CUALQUIER UBICACION AGREGAR LA CLASE .banner*/      
+.banner{position: relative; width: 100%; height: auto;}
+      
+/*MENU DE DESTACADOS CON LAS 5 OPCIONES*/
+#ListaDestacados {width: 385px;}
+#ListaDestacados ul .list-group{width: 385px !important;max-height: 90; padding: 0;}
+#ListaDestacados .list-group-item{font-family: 'Baloo' !important;height: 56px;width: 385px; display: flex; align-items: center; font-size: 18px;}
+#ListaDestacados .list-group-item:hover{background:linear-gradient(90deg, rgba(0,15,159,1) 0%, rgba(0,102,255,1) 42%, rgba(0,130,255,1) 82%);color: #FFFFFF !important;}
+#ListaDestacados ul li a{font-size:18px !important; font-family: 'Baloo' !important;}
+#ListaDestacados ul li a:hover{font-weight: bold !important;color: #ffffff !important;}
+
+
+    /*Transparencia ya no usamos la seccion de trasparencia por lo cual lo dejamos comentado si se desea quitar el atributo de comentario general
+    .FondoTransparencia{width: 55%;background: #001e96;height: 141px;border-radius: 100px;margin-top: 2%;position: absolute;left:40%;}
+    .LupaTransparencia{position: absolute;left: 80%;top:-2%;}
+    .LupaTransparenciaFondo{top:0%;width: 565px;height: 141px; position:absolute;left:-65%}
+    
+    #BarraNavegacionTransparencia{position: absolute; left: 20%;top:4%;width: 85%;z-index:100;height: 130px;}
+    #BarraNavegacionTransparencia .navbar{background-color: transparent !important;  box-shadow: none !important;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a {color:#ffffff;font-size:12px;font-weight: bold;padding: 2px;}
+    #BarraNavegacionTransparencia .navbar-nav > li > a:hover {color:#0082FF;}
+    #BarraNavegacionTransparencia .navbar-brand{display: none;}
+    
+    #ColeccionTransparencia{display: inline-block; height: 110px;width: 80%;}      
+    #ColeccionTransparencia li a{float: left;list-style: outside none none;width: 40%;color: white; margin-top: -2px;}
+    #ColeccionTransparencia li a:hover{float: left;list-style: outside none none;width: 40%;color: white; font-weight: bold;}
+    Transparencia*/
+    
+    /*Footer*/
+    footer{margin-top:0% !important;}
+    .page-footer #LogoOficialSEG{width: 70%;height: auto;}
+    .page-footer #LogoIgualdadLaboral{width: 60%;height: auto; margin-left: -50%}
+    .page-footer .atencionciudadana{font-size: 14px; color:#000F9F; text-align: center;font-family: 'Proxima-Nova-Reg';padding-top: 2%;}
+    .page-footer .ubicacionessedes{font-size: 14px; color:#000F9F; text-align: center;font-family: 'Proxima-Nova-Reg';padding-top: 2%;}
+    .page-footer .list-group-item{font-size: 14px;font-family: 'Proxima-Nova-Reg';padding-top: 2%; background-color: transparent;text-align: left;}
+    .page-footer .list-group-item a{text-decoration: none; color: #000F9F;}
+    /*/Footer*/ 
+    
+        
+      
+    @media (min-width: 350px) and (max-width: 580px) {
+        
+      body{max-width: 100%;}
+
+      /*Utilizar la siguiente clase si se desea agregar un contenedor el maximo es de 1600px de acuerdo a los lineamientos*/
+      .container{max-width: 100%;}
+      
+      #IconoRectangulo{ }
+
+      .d-xs-none{display: none;}
+        /*Generales*/
+              /*Generales*/
+              #BarradeNavegacionPrincipal  .navbar-toggler-icon {color:white;}
+              #BarradeNavegacionPrincipal .nav-item{border:#000F9F;border-style: solid;border-width: 1px;    text-align: center;vertical-align: middle;}
+              #BarradeNavegacionPrincipal .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 8px;}
+              #BarradeNavegacionPrincipal .navbar-nav > li > a:hover {color:#FFFFFF;font-size:14px;padding: 10px;background-color: #001F8A;}  
+              #logotipoSEGoficial{height: 40px; top:30%;padding: 0; left:0%;position: absolute;}
+              #CintaPrincipal{background-color:#E4ECFA; color:white; font-size:12px; height: auto; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+              #CintaPrincipal a{text-decoration: none;color: white;padding-left: 2%;}
+              #CintaPrincipal i{ font-size:18px;}
+              #CintaPrincipal i:hover{ font-size:24px;}
+              #MenuMovil{background-color: white;position: absolute;width: 100%;top: 100%;left:0;right: 0;z-index:1000;}
+              .navbar-toggler i{color: #000F9F; font-size: 30px; position: absolute; left:80%;}  
+        
+        /*Cinta Principal que contiene Llamanos, escribenos,directorio,transparencia e iconos de redes sociales*/
+        #CintaPrincipal{display:flex; align-items: center;height: 50px;background-color:#E4ECFA; color:#000F9F; font-size:18px; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+        #CintaPrincipal a{font-size:12px;text-decoration: none;color: #000F9F;padding-left: 2%;}
+        #CintaPrincipal i{font-size:18px;}
+        #CintaPrincipal i:hover{font-weight: bold; color:#FF8200;}
+        #CintaPrincipal a:hover{font-weight: bold; color:#FF8200;}
+      
+        /*Iconos de redes sociales de SEG en la cinta principal*/
+        #IconosRedesSociales a i{font-size:18px;color:#0066FF !important;}
+        #IconosRedesSociales i:hover{color:#FF8200 !important;}
+        #IconosRedesSociales #TextoIdioma{font-size:12px !important;color:#0066FF !important;}
+        #IconosRedesSociales #TextoIdioma:hover{font-size:12px !important;color:#FF8200 !important;}
+        #IconosRedesSociales a img{height:auto; width: 8% !important; margin-top: -3%;}
+      
+      /*/Generales*/
+      
+      /*SLIDER O IMAGEN DENTRO DEL CAROUSEL CON LAS MEDIDAS DE 790X390*/      
+      .carousel-item img{width: 100% !important;height: 60%;}
+      
+      /*BANNER EN CUALQUIER UBICACION AGREGAR LA CLASE .banner*/      
+      .banner{position: relative; width: 100%; height: 60%;}
+            
+      /*MENU DE DESTACADOS CON LAS 5 OPCIONES*/
+      #ListaDestacados {width: 100% !important; margin-top: 6%;}
+      #ListaDestacados ul .list-group{width: 100% !important; padding: 0;}
+      #ListaDestacados .list-group-item{font-family: 'Baloo' !important;height: 40px;width: 100%; display: flex; align-items: center; font-size: 18px;}
+      #ListaDestacados .list-group-item:hover{background:linear-gradient(90deg, rgba(0,15,159,1) 0%, rgba(0,102,255,1) 42%, rgba(0,130,255,1) 82%);color: #FFFFFF !important;}
+      #ListaDestacados ul li a{font-size:14px !important; font-family: 'Proxima-Nova-Reg' !important;}
+      #ListaDestacados ul li a:hover{font-weight: bold !important;color: #ffffff !important;}
+      
+      
+          /*Transparencia ya no usamos la seccion de trasparencia por lo cual lo dejamos comentado si se desea quitar el atributo de comentario general
+          .FondoTransparencia{width: 55%;background: #001e96;height: 141px;border-radius: 100px;margin-top: 2%;position: absolute;left:40%;}
+          .LupaTransparencia{position: absolute;left: 80%;top:-2%;}
+          .LupaTransparenciaFondo{top:0%;width: 565px;height: 141px; position:absolute;left:-65%}
+          
+          #BarraNavegacionTransparencia{position: absolute; left: 20%;top:4%;width: 85%;z-index:100;height: 130px;}
+          #BarraNavegacionTransparencia .navbar{background-color: transparent !important;  box-shadow: none !important;}
+          #BarraNavegacionTransparencia .navbar-nav > li > a {color:#ffffff;font-size:12px;font-weight: bold;padding: 2px;}
+          #BarraNavegacionTransparencia .navbar-nav > li > a:hover {color:#0082FF;}
+          #BarraNavegacionTransparencia .navbar-brand{display: none;}
+          
+          #ColeccionTransparencia{display: inline-block; height: 110px;width: 80%;}      
+          #ColeccionTransparencia li a{float: left;list-style: outside none none;width: 40%;color: white; margin-top: -2px;}
+          #ColeccionTransparencia li a:hover{float: left;list-style: outside none none;width: 40%;color: white; font-weight: bold;}
+          Transparencia*/
+          
+          /*Footer*/
+          footer{margin-top:0% !important;}
+          .page-footer #LogoOficialSEG{width: 50%;height: auto;}
+          .page-footer #LogoIgualdadLaboral{width: 20%;height: auto; margin-left: 60%; margin-top: -20%;}
+          .page-footer .atencionciudadana{font-size: 12px; color:#000F9F; text-align: center;font-family: 'Proxima-Nova-Reg';padding-top: 5%;}
+          .page-footer .ubicacionessedes{font-size: 12px; color:#000F9F; text-align: center;font-family: 'Proxima-Nova-Reg';padding-top: 5%;}
+          .page-footer .list-group-item{font-size: 12px;font-family: 'Proxima-Nova-Reg';padding-top: 5%; background-color: transparent;text-align: left;}
+          .page-footer .list-group-item a{text-decoration: none; color: #000F9F;}
+          /*/Footer*/ 
+
+}      
+footer.page-footer a {
+  color: #0c1bf9;
+}
+
+@media (min-width: 260px) and (max-width: 350px) {
+        
+  body{max-width: 100%;}
+
+  /*Utilizar la siguiente clase si se desea agregar un contenedor el maximo es de 1600px de acuerdo a los lineamientos*/
+  .container{max-width: 100%;}
+  
+  #IconoRectangulo{ }
+
+  .d-xs-none{display: none;}
+    /*Generales*/
+          /*Generales*/
+          #BarradeNavegacionPrincipal  .navbar-toggler-icon {color:white;}
+          #BarradeNavegacionPrincipal .nav-item{border:#000F9F;border-style: solid;border-width: 1px;    text-align: center;vertical-align: middle;}
+          #BarradeNavegacionPrincipal .navbar-nav > li > a {color:#000F9F;font-size:12px;font-weight: bold;padding: 8px;}
+          #BarradeNavegacionPrincipal .navbar-nav > li > a:hover {color:#FFFFFF;font-size:14px;padding: 10px;background-color: #001F8A;}  
+          #logotipoSEGoficial{height: 40px; top:30%;padding: 0; left:-20%;position: absolute;}
+          #CintaPrincipal{background-color:#E4ECFA; color:white; font-size:12px; height: auto; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+          #CintaPrincipal a{text-decoration: none;color: white;padding-left: 2%;}
+          #CintaPrincipal i{ font-size:18px;}
+          #CintaPrincipal i:hover{ font-size:24px;}
+          #MenuMovil{background-color: white;position: absolute;width: 100%;top: 100%;left:0;right: 0;z-index:1000;}
+          .navbar-toggler i{color: #000F9F; font-size: 30px; position: absolute; left:80%; top:35%;}  
+    
+    /*Cinta Principal que contiene Llamanos, escribenos,directorio,transparencia e iconos de redes sociales*/
+    #CintaPrincipal{display:flex; align-items: center;height: 50px;background-color:#E4ECFA; color:#000F9F; font-size:18px; text-decoration: none; font-family: 'Proxima-Nova-Reg';}
+    #CintaPrincipal a{font-size:12px;text-decoration: none;color: #000F9F;padding-left: 2%;}
+    #CintaPrincipal i{font-size:18px;}
+    #CintaPrincipal i:hover{font-weight: bold; color:#FF8200;}
+    #CintaPrincipal a:hover{font-weight: bold; color:#FF8200;}
+  
+    /*Iconos de redes sociales de SEG en la cinta principal*/
+    #IconosRedesSociales a i{font-size:18px;color:#0066FF !important;}
+    #IconosRedesSociales i:hover{color:#FF8200 !important;}
+    #IconosRedesSociales #TextoIdioma{font-size:12px !important;color:#0066FF !important;}
+    #IconosRedesSociales #TextoIdioma:hover{font-size:12px !important;color:#FF8200 !important;}
+    #IconosRedesSociales a img{height:auto; width: 8% !important; margin-top: -3%;}
+  
+  /*/Generales*/
+  
+  /*SLIDER O IMAGEN DENTRO DEL CAROUSEL CON LAS MEDIDAS DE 790X390*/      
+  .carousel-item img{width: 100% !important;height: 60%;}
+  
+  /*BANNER EN CUALQUIER UBICACION AGREGAR LA CLASE .banner*/      
+  .banner{position: relative; width: 100%; height: 60%;}
+        
+  /*MENU DE DESTACADOS CON LAS 5 OPCIONES*/
+  #ListaDestacados {width: 100% !important; margin-top: 6%;}
+  #ListaDestacados ul .list-group{width: 100% !important; padding: 0;}
+  #ListaDestacados .list-group-item{font-family: 'Baloo' !important;height: 40px;width: 100%; display: flex; align-items: center; font-size: 18px;}
+  #ListaDestacados .list-group-item:hover{background:linear-gradient(90deg, rgba(0,15,159,1) 0%, rgba(0,102,255,1) 42%, rgba(0,130,255,1) 82%);color: #FFFFFF !important;}
+  #ListaDestacados ul li a{font-size:14px !important; font-family: 'Proxima-Nova-Reg' !important;}
+  #ListaDestacados ul li a:hover{font-weight: bold !important;color: #ffffff !important;}
+  
+  
+      /*Transparencia ya no usamos la seccion de trasparencia por lo cual lo dejamos comentado si se desea quitar el atributo de comentario general
+      .FondoTransparencia{width: 55%;background: #001e96;height: 141px;border-radius: 100px;margin-top: 2%;position: absolute;left:40%;}
+      .LupaTransparencia{position: absolute;left: 80%;top:-2%;}
+      .LupaTransparenciaFondo{top:0%;width: 565px;height: 141px; position:absolute;left:-65%}
+      
+      #BarraNavegacionTransparencia{position: absolute; left: 20%;top:4%;width: 85%;z-index:100;height: 130px;}
+      #BarraNavegacionTransparencia .navbar{background-color: transparent !important;  box-shadow: none !important;}
+      #BarraNavegacionTransparencia .navbar-nav > li > a {color:#ffffff;font-size:12px;font-weight: bold;padding: 2px;}
+      #BarraNavegacionTransparencia .navbar-nav > li > a:hover {color:#0082FF;}
+      #BarraNavegacionTransparencia .navbar-brand{display: none;}
+      
+      #ColeccionTransparencia{display: inline-block; height: 110px;width: 80%;}      
+      #ColeccionTransparencia li a{float: left;list-style: outside none none;width: 40%;color: white; margin-top: -2px;}
+      #ColeccionTransparencia li a:hover{float: left;list-style: outside none none;width: 40%;color: white; font-weight: bold;}
+      Transparencia*/
+      
+      /*Footer*/
+      footer{margin-top:0% !important;}
+      .page-footer #LogoOficialSEG{width: 50%;height: auto;}
+      .page-footer #LogoIgualdadLaboral{width: 20%;height: auto; margin-left: 60%; margin-top: -20%;}
+      .page-footer .atencionciudadana{font-size: 12px; color:#000F9F; text-align: center;font-family: 'Proxima-Nova-Reg';padding-top: 5%;}
+      .page-footer .ubicacionessedes{font-size: 12px; color:#000F9F; text-align: center;font-family: 'Proxima-Nova-Reg';padding-top: 5%;}
+      .page-footer .list-group-item{font-size: 12px;font-family: 'Proxima-Nova-Reg';padding-top: 5%; background-color: transparent;text-align: left;}
+      .page-footer .list-group-item a{text-decoration: none; color: #000F9F;}
+      /*/Footer*/ 
+
+}      
