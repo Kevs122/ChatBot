@@ -6,8 +6,7 @@
     // const secret = 'KiwXQnTY-AQ.P0qGfw7sjhpBK2KbSYakLymmoOce5xweyMrGqQez-c4';
   
     // ====== direct line test
-    //const secret = 'MIwX1YCwL48.TjPRy68RAr_bAVufxCWR2Xl6cFEL4orc_MUgkx1GSNE';
-    const secret = 'B5aoOVJO0fo.NoyYsHGLO4o9ne4URZv2rJGuRwlQA7yXNMBTFXNhn-4';
+    const secret = '5wy4y9WQ44w.7I3iaGII-9hgR22_Dj9ZHXWZWaB0miUABhxGPP-m7aU';
   
     const res = await fetch('https://directline.botframework.com/v3/directline/tokens/generate', { 
       headers: {
